@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+#main-header {
+    background: rgb(32, 175, 66);
+    color: white;
+    height: 80px;
+    
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0; /* Posicionamos la cabecera al lado izquierdo */
+    top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: blue;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#imagen {
+    
+    background-color: rgba(226, 0, 0, 0.993);
+    background-image: url("fondo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/* Estilo de header */
+head {
+    
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+header {
+    background-color: rgba(233, 236, 243, 0.7);
+    padding: 0px;
+    
+    
+}
+
+/* Crear 2 columnas con la misma posición en la fila */
+nav {
+    float: left;
+    width: 10%; 
+    height:75px;  
+    
+}
+
+nav ul {
+    list-style-type: none;
+    
+}
+
+article {
+    float:left;
+    width: 75%;
+    height: 0px;
+    /* only for demonstration, should be removed */  
+}
+article_1 {
+    float:right;
+    width: 15%;
+    height: 0px;
+    /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Estilo de footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#menu{
+    font-size: .5cm;
+    font-family: "Segoe UI";
+    font-weight:700;
+    background-color: rgba(255, 255, 255, 0.809);
+
+}
+#logo-menu{
+    float : left;
+    margin-top: 5px;
+    color: rgb(18, 28, 220);
+    display:block;
+    
+    text-decoration:none;
+}
+
+#logo2-menu{
+    float:right;
+    color: rgb(245, 245, 245);
+    background-color: #0922c7;
+    display:block;
+    padding: 20px 20px;
+    text-decoration:none;
+    margin-top: 5px;
+}
+#menu ul{
+    float:right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+    
+}
+#menu ul li{
+    margin-top: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+#menu ul li a{ 
+    color: rgb(81, 85, 111);
+    display: inline-block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{
+    background-color: #fdfdfd;
+}
+#schedule{
+    background-color: rgba(255, 255, 255, 0.966);
+    padding: 0px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 35px;
+}
+#scheduleopciones{
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    display: inline-block;
+    padding: 30px 20px;
+    margin-left: 100px;
+}
+#schedulsub{
+    margin-top: 50px;
+    float: right;
+    color: rgb(245, 245, 245);
+    background-color: #0922c7;
+    display: inline-block;
+    padding: 10px 10px;
+    margin-left: 60px;
+    margin-right: 10px;
+    
+}
+img.redimension {
+    width:1400px;
+    height:200px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+img.redimension1 {
+    width:500px;
+    height:450px;
+    margin-left: 900px;
+}
+img.redimension2 {
+    width:500px;
+    height:450px;
+    margin-left: 100px;
+}
+#ventajasvacuna{
+
+    background-color: rgba(179, 177, 177, 0.102);
+    padding: 0px;
+    display: inline-block;
+    padding: 40px 20px;
+    margin-left: 150px;
+}
+#fin{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 35px;
+}
+#infofin{
+    background-color: rgba(171, 10, 10, 0);
+    padding: 0px;
+    display: inline-block;
+    padding:100px 100px;
+    margin-left: 60px;
+}
+#infofin1{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px;
+    display: inline-block;
+    padding: 30px 20px;
+    margin-left: 400px;
+}
